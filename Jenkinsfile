@@ -1,6 +1,5 @@
 pipeline {
-    agent { label 'docker-agent' } // or use 'any' if agent is not ready
-
+    agent any 
     triggers {
         pollSCM('H/5 * * * *')
     }
